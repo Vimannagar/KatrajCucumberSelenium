@@ -11,9 +11,9 @@ Then orders section should get display
 
 
 Scenario: Login with correct credentials
-Given user is on the login page
+Given user is on landing page
 When user enters the username "8176867662"
 And user enters the password "123456"
 And user click on login button
-Then user will be able to login
+
 

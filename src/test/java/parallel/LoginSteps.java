@@ -37,33 +37,26 @@ public class LoginSteps {
 
 	@Then("orders section should get display")
 	public void orders_section_should_get_display() {
-	   
-	}
-
-	@Given("user is on the login page")
-	public void user_is_on_the_login_page() {
-	   
+		boolean isorderdisplay = loginpage.isOrdersDisplayed();
+		
+		Assert.assertTrue(isorderdisplay);
 	}
 
 	@When("user enters the username {string}")
 	public void user_enters_the_username(String string) {
-	    
+	    loginpage.enterUsername();
 	}
 
 	@When("user enters the password {string}")
 	public void user_enters_the_password(String string) {
-	    
+		loginpage.enterPassword();
 	}
 
 	@When("user click on login button")
 	public void user_click_on_login_button() {
-	    
+		loginpage.clickOnSignin();
 	}
 
-	@Then("user will be able to login")
-	public void user_will_be_able_to_login() {
-	    
-	}
-	
+
 
 }
