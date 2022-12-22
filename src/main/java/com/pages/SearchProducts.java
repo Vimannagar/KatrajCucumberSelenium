@@ -23,7 +23,7 @@ public class SearchProducts {
 	
 	public void enterText(String text)
 	{
-		driver.findElement(searchbutton).sendKeys(text);
+		driver.findElement(searchtextbox).sendKeys(text);
 		
 		driver.findElement(searchbutton).click();
 	}

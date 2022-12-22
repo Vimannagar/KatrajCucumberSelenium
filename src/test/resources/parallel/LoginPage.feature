@@ -1,15 +1,16 @@
 Feature: Login Page
+@smoke
 Scenario: title verification
 Given user is on landing page
 When user gets the title of page
 Then page title should be "Amazon shopping site in India"
 
-
+@functional
 Scenario: Orders section display verification
 Given user is on landing page
 Then orders section should get display 
 
-
+@regression @functional
 Scenario: Login with correct credentials
 Given user is on landing page
 When user enters the username "8176867662"

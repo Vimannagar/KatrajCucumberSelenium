@@ -37,7 +37,7 @@ public class ApplicationHooks {
 		
 		 driverfactory = new DriverFactory();
 		 
-	 driver 	= driverfactory.initDriver(browsername);
+	 driver = driverfactory.initDriver(browsername);
 	}
 	
 	
